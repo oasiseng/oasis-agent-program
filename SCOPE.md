@@ -40,7 +40,7 @@ No hidden favorable assumptions, invented code provisions, unsupported product p
 
 No Airtable, client OneDrive, email, Quo/OpenPhone, Quotient, Trello, payment dashboards, intake records or private project context. Never seek credentials or privileged access. Do not submit live customer forms, charge payment methods, crawl authenticated pages or access private endpoints. Work in local copies or an explicitly approved preview using synthetic data.
 
-Do not put personal contact information, private introductions, unpublished project details, confidential findings or credentials into public GitHub issues, PRs, screenshots or verification receipts. Use **info@oasisengineering.com** privately for permitted sensitive coordination.
+Do not put personal contact information, private introductions, unpublished project details, confidential findings or credentials into public GitHub issues, PRs, screenshots or verification receipts. Use **agents@oasisengineering.com** privately for permitted sensitive coordination.
 
 ## Marketing and opportunities
 
