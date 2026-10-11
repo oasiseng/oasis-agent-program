@@ -1,2 +1,77 @@
-# oasis-agent-program
+# Oasis Public Contribution Pilot
+
+**We're hiring agents to improve what the world can use.**
+
 Help Oasis Engineering improve public websites, GitHub projects, apps, calculators, documentation, publications and business development. Human contributors and human-operated agents are welcome. Work from public information, deliver something useful, and let Oasis review it.
+
+**Status: repository prepared; remote publication and verification deployment pending. All 48 catalog entries are sample proposals, not funded openings.**
+
+This repository complements the website's `/agents/` page. It contains the contribution program and a small **World AgentKit** verification service. It is not an employment offer, engineering engagement, internal agent platform, payment service or authorization to represent Oasis.
+
+## Start here
+
+1. Read [Scope and engineering boundaries](SCOPE.md).
+2. Browse [48 sample tasks](catalog/TASKS.md): eight in each category below.
+3. Open one proposal using this repository's issue template, or email **info@oasisengineering.com** for personal or sensitive details. Use `[Oasis agent pilot]` in the subject.
+4. Wait for Oasis to confirm the target, scope, acceptance criteria, operator and reward before starting paid work.
+5. Deliver a focused PR, draft or research artifact with evidence. Oasis decides acceptance, release and payment.
+
+| Category | Examples | Review |
+| --- | --- | --- |
+| Website & GitHub fixes | Broken links, accessibility, mobile layout, build failures | Oasis owner; PE if technical behavior changes |
+| Apps & calculators | Transparent examples, input validation, useful micro-apps | PE for calculations, assumptions or technical output |
+| Documentation & resources | READMEs, tutorials, source-linked references | PE for technical claims |
+| SEO & discoverability | Accurate metadata, internal links, machine-readable catalogs | Oasis; no ranking guarantees |
+| Marketing & publications | Draft campaigns, demonstrations, educational content | Oasis publishes; PE reviews technical claims |
+| Business development | Public RFPs, partner research, willing introductions | Oasis decides fit; private handling of personal details |
+
+**Proposed starting reward: $25 USD for a small, meaningful bug-fix PR accepted under terms confirmed before work begins.** Other work is scoped individually. A PR, receipt, issue label, passing test or automated review does not approve work or earn payment. No standing commission or total reward pool is offered. See [Contributing](CONTRIBUTING.md).
+
+## The engineering boundary
+
+Contributions may improve software and prepare technical drafts. They may not issue final engineering opinions, certify safety or code compliance, approve a design, perform an inspection, sign or seal documents, impersonate a PE, or deliver project-specific advice as Oasis. Technical material remains **DRAFT — FOR PE REVIEW** until reviewed and released by the responsible licensed professional. No seal or signature assets belong in submissions. See [SCOPE.md](SCOPE.md) for concrete examples.
+
+## What AgentKit does here
+
+An operator's registered agent signs a short-lived challenge bound to a public GitHub issue/PR and an artifact hash. The service verifies the signature and checks World AgentBook, then returns a shareable receipt. It uses no payment request and grants no Oasis permissions.
+
+```mermaid
+flowchart LR
+  A[Public proposal and artifact] --> B[AgentKit signed challenge]
+  B --> C[Signature + AgentBook + limits]
+  C --> D[Verification receipt]
+  D --> E[Oasis reviews agreed task]
+  E --> F[PE review when technical]
+  F --> G[Oasis accepts and releases]
+```
+
+The receipt establishes a human-backing signal at verification time. It does **not** prove the person's legal identity, GitHub account ownership, authorship, correctness, professional license, task assignment, payment eligibility or continued registration. Oasis checks the operator and deliverable separately. Verification is optional unless an individual task explicitly requires it; manual submissions remain available.
+
+## Run locally
+
+Requires Node.js 22+ and npm. No production account or wallet is required for the automated tests.
+
+```sh
+npm ci
+npm run verify
+npm run db:local
+npm run dev
+```
+
+`GET /health` and `GET /catalog.json` work locally. `/api/verify` returns 503 while `PROGRAM_ENABLED` is false. [Deployment instructions](docs/DEPLOYMENT.md) explain enabling a dedicated test service and setting its secret. The build command is a **dry run**, not a deployment.
+
+## Repository map
+
+- [Contributor process](CONTRIBUTING.md), [engineering boundaries](SCOPE.md), [review checklist](REVIEW.md), [security reporting](SECURITY.md).
+- [AgentKit contract and privacy](docs/AGENTKIT.md), [deployment](docs/DEPLOYMENT.md), [website connection](docs/WEBSITE-INTEGRATION.md), [owner operating guide](docs/OPERATIONS.md).
+- [Task catalog](catalog/TASKS.md) and [machine-readable catalog](catalog/tasks.json).
+- `src/`: verification Worker; `migrations/`: D1 schema; `examples/`: operator client; `tests/`: real-signature/local-database tests.
+- `.github/`: proposal form, PR template, ownership and validation workflow. No automatic deployment, merging, acceptance or payout.
+
+## Launch status
+
+- Implemented locally: program documents, task catalog, templates, verification Worker, client example and automated tests.
+- Not performed: creation of a GitHub remote, production deployment, registration of a real operator wallet, or live proof with a registered person.
+- The owner creates the public GitHub repository and follows [the launch steps](docs/DEPLOYMENT.md). Do not advertise an active verifier until its deployed URL and a real proof have been checked.
+
+The software is provided under [MIT](LICENSE). The license is not a grant of professional authority, company endorsement, trademark rights or permission to reuse third-party material. Program boundaries and tests are operating controls; they do not guarantee an absence of professional or legal liability.
