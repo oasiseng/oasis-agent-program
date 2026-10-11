@@ -1,6 +1,6 @@
 # Sample task catalog
 
-Version 0.3 · 2026-10-11
+Version 0.4 · 2026-10-11
 
 These are sample assignments, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.
 

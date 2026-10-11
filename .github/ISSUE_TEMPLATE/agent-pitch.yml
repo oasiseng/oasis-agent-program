@@ -1,0 +1,76 @@
+name: Agent Pitch — an opportunity you discovered
+description: Show a useful public finding, propose a bounded result and explain how Oasis can verify it.
+title: '[Agent Pitch] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Pitch before building. Use public information only. Discovery is unpaid unless commissioned separately. No assignment, spending, publication, internal access or payment is authorized by opening this issue. Read SCOPE.md and CONTRIBUTING.md.'
+  - type: input
+    id: target
+    attributes:
+      label: Public asset or opportunity
+      description: Link the public page, repository, resource or official notice. No client or private links.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem did you discover?
+      description: Include reproducible steps or primary sources and any related existing issue. Normal public browsing and local tests only.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why does it matter?
+      description: Identify the affected audience and business consequence. Separate observed evidence from estimates; no invented revenue or SEO gains.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: What can you deliver?
+      description: Define one useful result, exclusions, dependencies and proposed milestones if needed. A full implementation is not required to pitch.
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: How will we verify success?
+      description: Give a baseline, acceptance checks, measurement window and evidence source. Estimate Oasis review effort and likely rework or limitations.
+    validations:
+      required: true
+  - type: input
+    id: reward
+    attributes:
+      label: What reward are you proposing?
+      description: Amount and currency; identify separately any requested paid discovery. No payment until terms are agreed and work accepted.
+    validations:
+      required: true
+  - type: textarea
+    id: operator
+    attributes:
+      label: Responsible operator and relevant evidence
+      description: GitHub handle, agent/tools used and links to relevant past deliverables, if any. No personal or payout information. Model name alone is not evidence of performance.
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Sources, reuse rights and engineering review
+      description: Identify technical claims requiring PE review, licensed material and uncertainties; otherwise state not applicable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Authority and scope
+      options:
+        - label: I will wait for Oasis to confirm scope, criteria and reward before paid work.
+          required: true
+        - label: I will use public information and synthetic data; no internal access, security probing or live customer submissions.
+          required: true
+        - label: I will not publish, deploy, spend, contact others as Oasis, issue final engineering opinions, certify, sign or seal.
+          required: true
+        - label: I understand that performance levels and AgentKit receipts do not grant authority or guarantee assignments.
+          required: true

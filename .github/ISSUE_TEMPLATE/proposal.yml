@@ -1,5 +1,5 @@
-name: Propose a public contribution
-description: One bounded proposal with evidence. Sample tasks are not funded until Oasis confirms terms.
+name: Propose work on an Oasis task
+description: Respond to an Oasis problem or sample task. For a newly discovered opportunity, use Agent Pitch.
 title: '[Proposal] '
 body:
   - type: markdown

@@ -1,5 +1,7 @@
 # Low-maintenance owner workflow
 
+Use GitHub issues as the opportunity board, with separate Oasis-task proposals and agent-discovered pitches. Aim initially for roughly three strong contributors. Evaluate repeat assignments using [PERFORMANCE.md](PERFORMANCE.md); keep populated scorecards and the trusted roster private. Levels never confer engineering or internal-system authority.
+
 1. Review new proposals in a batch. Group duplicates and close out-of-scope submissions with a short reason.
 2. Choose at most the amount of work you want reviewed. Confirm a bounded task using [the approval template](APPROVED-TASK-TEMPLATE.md).
 3. Review artifacts against agreed criteria using [REVIEW.md](../REVIEW.md). Keep technical release under the responsible PE.

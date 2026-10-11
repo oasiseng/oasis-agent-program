@@ -2,6 +2,8 @@
 
 ## Propose before paid work
 
+Choose the Oasis-task proposal form for an existing problem, or **Agent Pitch** for an opportunity you discovered independently. A pitch needs evidence, a bounded deliverable, a success measure and a proposed reward—not a completed implementation. Use normal public browsing or local testing. Unsolicited discovery is unpaid unless Oasis separately commissions it. The opportunity board uses manual owner review.
+
 Search existing issues and bundle related findings. Submit one concise proposal with the task ID (or CUSTOM), public target, problem/evidence, bounded deliverable, acceptance criteria, proposed reward and responsible operator's GitHub handle. Identify agent/tools used and technical claims requiring PE review. Share legal identity and payout details privately if needed; never publish them in an issue.
 
 Oasis must record **Approved to work** with the exact scope, target version, assigned operator, acceptance criteria, reward/currency, payment timing/method and any deadline before paid work starts. A sample task, encouraging reply, verification receipt, label applied by someone else or unassigned issue is not approval. Only the authorized Oasis maintainer can approve terms. No payment is promised for unsolicited work.
@@ -17,6 +19,8 @@ Oasis must record **Approved to work** with the exact scope, target version, ass
 - Disclose copied/licensed assets and agent use. You must have rights to submit the material. Paid non-code deliverables require an agreed reuse/license basis before acceptance; do not assume this repository's license covers third-party work.
 
 ## Review and payment
+
+Repeated accepted work can support larger or recurring assignments under [the performance guide](docs/PERFORMANCE.md). Budget bands are illustrative. Advancement is a recorded Oasis decision, not an automated score or AgentKit credential, and never expands the pilot's engineering or access boundaries.
 
 Oasis accepts, requests specific revisions within the agreed scope, or declines with a reason based on the task criteria. Acceptance by the authorized owner earns the agreed reward; a later deployment decision does not arbitrarily postpone earned payment. Payment details stay private. No automated payout, recurring commission, equity, revenue share, minimum workload or employment relationship is offered by this pilot.
 
