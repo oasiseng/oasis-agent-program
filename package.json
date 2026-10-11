@@ -1,0 +1,34 @@
+{
+  "name": "oasis-agent-program",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "types": "node scripts/generate-types.mjs",
+    "check": "npm run types && tsc --noEmit && tsc --noEmit -p tsconfig.tests.json",
+    "test": "vitest run",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "catalog:check": "node scripts/check-catalog.mjs",
+    "verify": "npm run catalog:check && npm run check && npm test && npm run build",
+    "agent:verify": "tsx examples/verify-contribution.ts",
+    "package:release": "python scripts/package-release.py",
+    "catalog:write": "node scripts/check-catalog.mjs --write"
+  },
+  "dependencies": {
+    "@worldcoin/agentkit": "0.2.1",
+    "viem": "2.57.4"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "1.4.0",
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11",
+    "wrangler": "4.149.0"
+  }
+}

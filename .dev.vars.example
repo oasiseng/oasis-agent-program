@@ -1,0 +1,3 @@
+# Copy to .dev.vars for LOCAL testing only. Replace with a randomly generated value.
+# Production: use `npx wrangler secret put HUMAN_HASH_SECRET`.
+HUMAN_HASH_SECRET=REPLACE_WITH_AT_LEAST_32_RANDOM_CHARACTERS
