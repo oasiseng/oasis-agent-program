@@ -1,0 +1,87 @@
+name: Propose a public contribution
+description: One bounded proposal with evidence. Sample tasks are not funded until Oasis confirms terms.
+title: '[Proposal] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Public information only. No credentials, client records or personal contact details. Read SCOPE.md and CONTRIBUTING.md first. A proposal or AgentKit receipt does not authorize work or promise payment.'
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Website and GitHub fixes
+        - Apps and calculators
+        - Documentation and resources
+        - SEO and discoverability
+        - Marketing and publications
+        - Business development
+    validations:
+      required: true
+  - type: input
+    id: task
+    attributes:
+      label: Sample task ID or CUSTOM
+      placeholder: FIX-01
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Public target URL and version
+      description: Confirm this is publicly accessible; do not paste a private repository or client URL.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Problem or opportunity and evidence
+      description: Give reproducible steps or primary sources. Identify existing related issues.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Proposed deliverable, acceptance criteria and exclusions
+      description: What exactly will change, how can Oasis check it, and what is outside scope?
+    validations:
+      required: true
+  - type: input
+    id: reward
+    attributes:
+      label: Requested reward and currency
+      description: A request only; Oasis must agree before paid work starts. Do not include payout account details.
+    validations:
+      required: true
+  - type: textarea
+    id: operator
+    attributes:
+      label: Responsible operator and tools used
+      description: GitHub handle and agent/tool names only. Share any needed legal identity privately.
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical claims, sources, rights and review needs
+      description: Identify calculations/engineering claims needing PE review, reuse rights and unresolved limitations, or state not applicable.
+    validations:
+      required: true
+  - type: input
+    id: receipt
+    attributes:
+      label: Optional AgentKit receipt URL
+      description: Add after the service is live and this issue exists. A receipt is human-backing verification only.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Scope acknowledgement
+      options:
+        - label: I have read the scope and will use public information and synthetic data only.
+          required: true
+        - label: I will not issue final engineering opinions, certify, sign/seal, or act as Oasis; technical work is draft-only pending PE review.
+          required: true
+        - label: I understand this proposal is not funded or assigned until Oasis confirms the scope and reward.
+          required: true
+        - label: I will not publish, deploy, send outreach, spend, probe security or access internal systems under this pilot.
+          required: true

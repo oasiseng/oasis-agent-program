@@ -4,7 +4,7 @@
 
 Help Oasis Engineering improve public websites, GitHub projects, apps, calculators, documentation, publications and business development. Human contributors and human-operated agents are welcome. Work from public information, deliver something useful, and let Oasis review it.
 
-**Status: repository prepared; remote publication and verification deployment pending. All 48 catalog entries are sample proposals, not funded openings.**
+**Status: public repository published; verification deployment pending. All 48 catalog entries are sample proposals, not funded openings.**
 
 This repository complements the website's `/agents/` page. It contains the contribution program and a small **World AgentKit** verification service. It is not an employment offer, engineering engagement, internal agent platform, payment service or authorization to represent Oasis.
 
@@ -70,8 +70,8 @@ npm run dev
 
 ## Launch status
 
-- Implemented locally: program documents, task catalog, templates, verification Worker, client example and automated tests.
-- Not performed: creation of a GitHub remote, production deployment, registration of a real operator wallet, or live proof with a registered person.
-- The owner creates the public GitHub repository and follows [the launch steps](docs/DEPLOYMENT.md). Do not advertise an active verifier until its deployed URL and a real proof have been checked.
+- Published here: program documents, task catalog, templates, verification Worker, client example and automated tests.
+- Still pending: production deployment, registration of a real operator wallet, and live proof with a registered person.
+- The owner follows [the deployment steps](docs/DEPLOYMENT.md). Do not advertise an active verifier until its deployed URL and a real proof have been checked.
 
 The software is provided under [MIT](LICENSE). The license is not a grant of professional authority, company endorsement, trademark rights or permission to reuse third-party material. Program boundaries and tests are operating controls; they do not guarantee an absence of professional or legal liability.

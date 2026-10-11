@@ -1,0 +1,9 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+const catalog = JSON.parse(readFileSync('catalog/tasks.json', 'utf8'));
+const tasks = catalog.categories.flatMap(c => c.tasks);
+if (catalog.categories.length !== 6 || tasks.length !== 48 || new Set(tasks.map(t => t.id)).size !== 48 || catalog.categories.some(c => c.tasks.length !== 8) || tasks.some(t => t.status !== 'sample') || catalog.activeBounties.length) throw new Error('Pilot must contain six categories of eight unique sample tasks and no implied funded openings.');
+if (catalog.internalAccess !== false || catalog.automatedPayouts !== false || catalog.verification.required !== false) throw new Error('Pilot boundary drift.');
+const md = `# Sample task catalog\n\nVersion ${catalog.version} · ${catalog.updated}\n\n${catalog.sampleNotice}\n\nAll tasks require confirmed scope and reward before paid work. Technical content requires PE review under [SCOPE.md](../SCOPE.md).\n\n` + catalog.categories.map(c => `## ${c.name}\n\n${c.summary}\n\n` + c.tasks.map(t => `### ${t.id} — ${t.title}\n\n- **Status:** sample; propose first\n- **Deliverable:** ${t.deliverable}\n- **Acceptance:** ${t.acceptance}\n- **Review:** ${t.review === 'engineer' ? 'Oasis and licensed PE before technical release' : 'Oasis; PE if technical claims or calculations are affected'}\n- **Reward:** ${t.reward === 'small-fix' ? 'Proposed $25 USD for a qualifying accepted small fix; confirm first' : 'Agree scope and reward before work'}\n`).join('\n')).join('\n');
+if (process.argv.includes('--write')) writeFileSync('catalog/TASKS.md', md);
+else if (readFileSync('catalog/TASKS.md', 'utf8') !== md) throw new Error('Catalog Markdown is stale; run npm run catalog:write.');
+console.log('Catalog verified: 48 unique samples, six categories, no active bounties.');

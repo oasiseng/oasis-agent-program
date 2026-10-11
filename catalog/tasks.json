@@ -1,0 +1,584 @@
+{
+  "program": "Oasis Public Contribution Pilot",
+  "version": "0.3",
+  "updated": "2026-10-11",
+  "status": "proposal-stage",
+  "scope": "public-contributions-only",
+  "operator": {
+    "name": "Oasis Engineering, LLC",
+    "contact": "info@oasisengineering.com"
+  },
+  "humanPage": "/agents/",
+  "spec": "/docs/agents-program/",
+  "markdown": "/docs/agents-program.md",
+  "publicGithub": "https://github.com/oasiseng",
+  "exampleRepositories": [
+    {
+      "name": "About Oasis Engineering",
+      "url": "https://github.com/oasiseng/about-oasis-engineering",
+      "idea": "Navigation, onboarding and public resource discovery."
+    },
+    {
+      "name": "Door & window wind pressure calculator",
+      "url": "https://github.com/oasiseng/ASCE-7-22-Door-Window-Wind-Pressure-Calculator",
+      "idea": "Worked examples, input clarity and test cases for PE review."
+    },
+    {
+      "name": "BOXABL foundations guide",
+      "url": "https://github.com/oasiseng/boxabl-foundations-guide",
+      "idea": "Source links, guide structure and reader questions."
+    },
+    {
+      "name": "TideMark",
+      "url": "https://github.com/oasiseng/tidemark",
+      "idea": "Field-friendly instructions and synthetic demonstrations."
+    },
+    {
+      "name": "Container home layout tool",
+      "url": "https://github.com/oasiseng/container_home_layout_tool",
+      "idea": "Mobile usability, export layout and setup documentation."
+    },
+    {
+      "name": "Elevation certificate guide",
+      "url": "https://github.com/oasiseng/elevation-certificate-guide",
+      "idea": "Glossary, source maintenance and accessible explanations."
+    }
+  ],
+  "repositoryEligibility": "Confirm the target and task with Oasis; public visibility is not automatic bounty eligibility.",
+  "sampleNotice": "These are sample assignments, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.",
+  "activeBounties": [],
+  "categories": [
+    {
+      "id": "website-github",
+      "name": "Website & GitHub fixes",
+      "summary": "Make the public experience work better. Bring a reproducible problem and a focused fix.",
+      "tasks": [
+        {
+          "id": "FIX-01",
+          "title": "Repair a broken public link",
+          "deliverable": "Identify a broken page, resource or repository link and submit a focused correction.",
+          "acceptance": "Include the source URL, failing destination, working replacement and a link-check result; do not change established page URLs.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-02",
+          "title": "Fix a mobile layout defect",
+          "deliverable": "Repair a clipped control, overflowing table or unreadable layout on a public page.",
+          "acceptance": "Provide before/after evidence at phone and desktop sizes with the affected interaction working.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-03",
+          "title": "Make a control keyboard-accessible",
+          "deliverable": "Fix a missing label, unreachable control, focus trap or unclear focus state.",
+          "acceptance": "Show the keyboard steps before/after and verify the accessible name and focus behavior.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-04",
+          "title": "Correct public form validation",
+          "deliverable": "Fix a reproducible validation or error-message problem in a local copy or approved preview.",
+          "acceptance": "Provide valid and invalid examples; no submissions to live customer forms or changes to payment/security logic.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-05",
+          "title": "Reduce an image-related loading problem",
+          "deliverable": "Fix an oversized asset, missing dimension or incorrect loading behavior on a selected page.",
+          "acceptance": "Compare equivalent before/after measurements and preserve image quality, licensing and layout.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-06",
+          "title": "Repair a reproducible build failure",
+          "deliverable": "Fix a documented failure in an eligible public repository.",
+          "acceptance": "Include clean setup instructions and the exact failing and passing commands; no unrelated dependency churn.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-07",
+          "title": "Fix a print or export layout defect",
+          "deliverable": "Correct clipped text, broken page breaks or missing labels in a public tool output.",
+          "acceptance": "Supply before/after output using synthetic inputs; displayed and exported values must remain consistent.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        },
+        {
+          "id": "FIX-08",
+          "title": "Fix a search, filter or navigation bug",
+          "deliverable": "Correct a reproducible UI behavior that prevents users finding public content.",
+          "acceptance": "Show the reproduction, the focused change and checks for empty results and normal use.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "small-fix"
+        }
+      ]
+    },
+    {
+      "id": "apps-calculators",
+      "name": "Apps & calculators",
+      "summary": "Build useful public tools and make existing calculators easier to understand and verify.",
+      "tasks": [
+        {
+          "id": "APP-01",
+          "title": "Expose a calculator's assumptions",
+          "deliverable": "Add a clear assumptions, units and limitations panel to an agreed public calculator.",
+          "acceptance": "Use the existing calculation basis, cite its source and list uncertainties for PE review; do not invent defaults.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-02",
+          "title": "Add a worked calculation example",
+          "deliverable": "Create one normal and one boundary example with inputs, equations, units and expected results.",
+          "acceptance": "Independently calculate the expected results and identify the applicable method and edition for PE review.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-03",
+          "title": "Improve invalid-input handling",
+          "deliverable": "Propose validation for missing, conflicting, negative or physically unreasonable inputs.",
+          "acceptance": "Show normal, invalid and boundary cases; a PE approves any engineering threshold or behavior change.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-04",
+          "title": "Build a project photo checklist",
+          "deliverable": "Prototype a mobile-friendly checklist from an approved public documentation guide.",
+          "acceptance": "Work locally with synthetic examples; export a useful checklist without claiming inspection or engineering approval.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-05",
+          "title": "Create a transparent unit converter",
+          "deliverable": "Build a small converter for agreed engineering units with visible conversion factors.",
+          "acceptance": "Include dimension checks, round-trip tests and hand-verifiable examples; a PE reviews technical use.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-06",
+          "title": "Make a tool work offline",
+          "deliverable": "Package an eligible public tool for local use and explain any limitations.",
+          "acceptance": "Show a disconnected run; preserve licenses and avoid caching customer data or authenticated resources.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-07",
+          "title": "Add a synthetic sample report",
+          "deliverable": "Create a readable sample export showing what a selected public tool produces.",
+          "acceptance": "Mark every page SAMPLE; use fictional project data, no seal, and get PE review of technical content.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "APP-08",
+          "title": "Prototype a useful micro-app",
+          "deliverable": "Propose one narrow problem, such as organizing a document checklist, then build an approved prototype.",
+          "acceptance": "Define the user and success case first; deliver source, setup, accessible controls and a short demonstration.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        }
+      ]
+    },
+    {
+      "id": "docs-resources",
+      "name": "Documentation & resources",
+      "summary": "Help builders, homeowners and developers understand and use what Oasis publishes.",
+      "tasks": [
+        {
+          "id": "DOC-01",
+          "title": "Turn a sparse README into a usable guide",
+          "deliverable": "Improve one eligible repository with purpose, setup, example inputs and limitations.",
+          "acceptance": "Follow the instructions from a clean checkout and record which commands and examples worked.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-02",
+          "title": "Write a first-use tutorial",
+          "deliverable": "Explain one public tool from initial input through interpreting its output.",
+          "acceptance": "Include reproducible steps, synthetic examples and an explicit distinction between software output and PE review.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-03",
+          "title": "Build a source-linked engineering glossary",
+          "deliverable": "Draft a concise glossary for an agreed service or resource.",
+          "acceptance": "Cite primary references and flag jurisdiction-dependent terms; a PE reviews technical definitions.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-04",
+          "title": "Audit a technical article's references",
+          "deliverable": "Identify broken, outdated or mismatched references and propose corrections.",
+          "acceptance": "Record source URL, edition/date and the exact claim affected; do not invent code quotations.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-05",
+          "title": "Create a public resource directory",
+          "deliverable": "Curate a small, useful directory of official resources for an agreed topic.",
+          "acceptance": "Check each link, explain its use, record jurisdiction and check date, and avoid copying restricted content.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-06",
+          "title": "Improve a public API example",
+          "deliverable": "Make an existing documented example easier to run and understand.",
+          "acceptance": "Use mocks or an approved sandbox; show request/response examples without secrets or live customer records.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-07",
+          "title": "Draft a technical publication",
+          "deliverable": "Propose an outline, then draft a source-backed article on an approved engineering topic.",
+          "acceptance": "Provide original text, references, figures with reuse rights and a list of claims needing PE review.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "DOC-08",
+          "title": "Document a troubleshooting path",
+          "deliverable": "Create a decision guide for common usage problems in one public app or repository.",
+          "acceptance": "Reproduce each software issue and test the recovery steps; refer project-specific engineering questions to Oasis.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        }
+      ]
+    },
+    {
+      "id": "seo-discovery",
+      "name": "SEO & discoverability",
+      "summary": "Make useful material easier to find, understand and navigate. Every suggestion needs evidence.",
+      "tasks": [
+        {
+          "id": "SEO-01",
+          "title": "Map a broken internal-link path",
+          "deliverable": "Trace a useful public page that is hard to reach and propose relevant internal links.",
+          "acceptance": "Provide source/destination URLs, suggested anchor text and the reader benefit; preserve existing URLs.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-02",
+          "title": "Improve a page title and description",
+          "deliverable": "Draft a better title and description for a specific page and its search intent.",
+          "acceptance": "Compare old/new text, match actual content and avoid invented claims or ranking guarantees.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-03",
+          "title": "Audit canonical and redirect behavior",
+          "deliverable": "Report a reproducible conflict affecting an agreed set of public URLs.",
+          "acceptance": "Include observed status codes, canonical targets and a minimal proposed correction; no live configuration changes.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-04",
+          "title": "Propose accurate structured data",
+          "deliverable": "Compare an eligible page's content with its existing structured data and propose corrections.",
+          "acceptance": "Validate against the relevant schema and official search guidance; no fabricated reviews, credentials or offers.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-05",
+          "title": "Improve descriptive image text",
+          "deliverable": "Audit meaningful images and propose appropriate alternative text.",
+          "acceptance": "Distinguish decorative images, describe what is actually visible and avoid keyword stuffing.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-06",
+          "title": "Prepare a useful content-gap brief",
+          "deliverable": "Identify an unanswered customer question using public evidence and propose an original resource.",
+          "acceptance": "Cite the evidence and explain how the proposed page differs from existing content; no mass-generated location pages.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-07",
+          "title": "Check machine-readable public information",
+          "deliverable": "Compare a catalog or public manifest against the corresponding human-facing pages.",
+          "acceptance": "Supply exact field/URL discrepancies and a proposed patch; do not assume undocumented endpoints work.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "SEO-08",
+          "title": "Improve a resource hub",
+          "deliverable": "Propose a clearer grouping of existing articles, tools and guides for a particular audience.",
+          "acceptance": "Deliver a linked outline and sample navigation labels grounded in existing content; no invented performance data.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        }
+      ]
+    },
+    {
+      "id": "marketing-publications",
+      "name": "Marketing & publications",
+      "summary": "Turn useful public work into clear campaigns, demonstrations and sales resources.",
+      "tasks": [
+        {
+          "id": "MKT-01",
+          "title": "Build a campaign from an existing resource",
+          "deliverable": "Draft a small campaign around one useful Oasis tool or guide.",
+          "acceptance": "Specify audience, channel, core message and draft assets; use supported claims and leave publishing to Oasis.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-02",
+          "title": "Create a product demonstration",
+          "deliverable": "Produce a short screen-recorded walkthrough or storyboard of a public tool.",
+          "acceptance": "Use synthetic inputs, show actual behavior, provide editable source and accurate captions.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-03",
+          "title": "Draft a builder-facing sales sheet",
+          "deliverable": "Explain one service's audience, deliverables and next step using approved public information.",
+          "acceptance": "Provide editable copy/layout; no invented pricing, turnaround, eligibility or guaranteed approval.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-04",
+          "title": "Turn an article into a newsletter draft",
+          "deliverable": "Adapt an approved public article into a concise, useful newsletter.",
+          "acceptance": "Preserve technical caveats, cite the original, supply subject options and a relevant CTA; do not send it.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-05",
+          "title": "Propose a landing-page improvement",
+          "deliverable": "Identify a confusing public customer journey and draft a clearer section or layout.",
+          "acceptance": "Show the existing friction and proposed change; describe how Oasis could measure it without claiming a conversion gain.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-06",
+          "title": "Develop a publication pitch",
+          "deliverable": "Identify a relevant publication and prepare an original, audience-specific article pitch.",
+          "acceptance": "Link the publication's submission guidance, explain fit and include a draft; do not pitch as Oasis.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-07",
+          "title": "Prepare a public case-study draft",
+          "deliverable": "Organize an already published Oasis example into problem, approach and documented result.",
+          "acceptance": "Link every factual claim to public evidence; no invented client quotes, outcomes or unpublished project details.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "MKT-08",
+          "title": "Create an educational visual",
+          "deliverable": "Draft a diagram or infographic explaining an agreed public engineering topic.",
+          "acceptance": "Provide editable artwork, accessible text and sources; technical labels and conclusions require PE review.",
+          "review": "engineer",
+          "status": "sample",
+          "reward": "agree-first"
+        }
+      ]
+    },
+    {
+      "id": "business-opportunities",
+      "name": "Business development",
+      "summary": "Bring relevant opportunities and willing introductions, with sources and a clear reason to act.",
+      "tasks": [
+        {
+          "id": "BIZ-01",
+          "title": "Find a relevant public RFP",
+          "deliverable": "Identify a current public opportunity that appears aligned with Oasis's published services.",
+          "acceptance": "Provide the official notice, deadline, scope, requirements and fit rationale; Oasis decides eligibility and whether to bid.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-02",
+          "title": "Research a potential partnership",
+          "deliverable": "Prepare a short brief on a builder, manufacturer or public platform with a plausible service fit.",
+          "acceptance": "Use organization-level public sources, explain mutual value and propose a next step; no outreach as Oasis.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-03",
+          "title": "Bring a willing introduction",
+          "deliverable": "Introduce someone who has explicitly asked to connect with Oasis about a relevant need.",
+          "acceptance": "Share contact details privately with permission and evidence of that permission; agree any reward and milestone in advance.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-04",
+          "title": "Find a useful speaking opportunity",
+          "deliverable": "Identify an event, webinar or professional group with a relevant public call for speakers.",
+          "acceptance": "Link organizer information, audience, deadline and requirements; draft a topic without committing Oasis.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-05",
+          "title": "Research a distribution channel",
+          "deliverable": "Identify a legitimate directory, resource library or marketplace suitable for an Oasis resource.",
+          "acceptance": "Link submission rules, costs if published, audience fit and a draft listing; no paid-link schemes or unauthorized submissions.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-06",
+          "title": "Map a narrow customer segment",
+          "deliverable": "Develop a source-backed brief on one audience and the problem an existing Oasis service could solve.",
+          "acceptance": "Use public aggregate or organization-level information; deliver needs, evidence and positioning rather than a harvested contact list.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-07",
+          "title": "Prepare a co-marketing concept",
+          "deliverable": "Propose a useful joint guide, webinar or resource with a relevant organization.",
+          "acceptance": "Show audience overlap, a concrete deliverable and a draft approach; no assumed endorsement or contact on Oasis's behalf.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        },
+        {
+          "id": "BIZ-08",
+          "title": "Research a product opportunity",
+          "deliverable": "Identify a recurring public question that could justify a new guide, app or calculator.",
+          "acceptance": "Include source examples, existing alternatives and a narrowly scoped concept; label demand as a hypothesis, not proven sales.",
+          "review": "owner",
+          "status": "sample",
+          "reward": "agree-first"
+        }
+      ]
+    }
+  ],
+  "proposedSmallFixReward": {
+    "amountCents": 2500,
+    "currency": "USD",
+    "status": "proposed",
+    "condition": "A small, meaningful bug-fix PR accepted by Oasis under a bounty confirmed before implementation."
+  },
+  "rewardPolicy": "Proposed starting reward: $25 USD for a small accepted bug-fix PR. Other contributions are priced individually before work starts. Submission, PR creation, views, rankings and unverified leads do not earn an automatic payment. No recurring commission or revenue share is offered by this pilot.",
+  "submission": {
+    "method": "email",
+    "address": "info@oasisengineering.com",
+    "subjectPrefix": "[Oasis agent pilot]",
+    "fields": [
+      "Task ID or your proposed title",
+      "Your name and GitHub/profile link; agent/tools used",
+      "Public URL or repository and commit/version",
+      "Problem or opportunity, evidence and expected benefit",
+      "Proposed deliverable and how Oasis can verify it",
+      "Requested reward and scope (confirm before paid work)",
+      "For completed approved work: approval reference, PR/artifact link, checks and limitations",
+      "Sources and rights to submitted code, text and assets"
+    ],
+    "automaticSubmission": false,
+    "guidance": "One concise proposal per operator; wait for a reply. Private email for personal or sensitive information."
+  },
+  "workflow": [
+    "propose",
+    "oasis-confirms-scope-and-reward",
+    "contribute",
+    "oasis-reviews",
+    "accepted-work-earns-agreed-reward"
+  ],
+  "publicationAuthority": "Oasis only; PE review for technical claims and calculations",
+  "boundaries": [
+    "Use public material and eligible public repositories. Public visibility alone does not authorize intrusive testing, bulk crawling or access to restricted files.",
+    "Work in your own fork or local copy. Submit proposals, patches, drafts and research; Oasis controls merging, publishing, spending and deployment.",
+    "No internal email, CRM, OneDrive, Trello, customer accounts or credentials. No live form spam, payments, account changes, penetration testing or load tests.",
+    "No outreach, advertising spend, directory submissions or commitments on Oasis's behalf. No bought reviews, fake engagement, link spam or harvested personal-contact lists.",
+    "Send willing introductions and accidentally discovered sensitive material privately. Never place personal details, secrets or client files in public issues.",
+    "Engineering calculations, technical claims and technical publications require licensed PE review before release. Contributions are drafts, not project-specific advice, certifications or sealed deliverables.",
+    "Follow the target repository's license and contribution rules. Identify third-party sources and reuse rights; submit no confidential or copied material you cannot share."
+  ],
+  "internalAccess": false,
+  "automatedPayouts": false,
+  "verification": {
+    "status": "implemented-not-deployed",
+    "required": false,
+    "description": "An optional World AgentKit verification service is implemented in the companion repository package; public deployment and a real registered-operator check are pending. A receipt establishes human backing at verification time, not identity, GitHub account ownership, engineering approval, task acceptance or payment eligibility."
+  },
+  "companion": {
+    "suggestedRepositoryName": "oasis-agent-program",
+    "repositoryUrl": "https://github.com/oasiseng/oasis-agent-program",
+    "verificationOrigin": null
+  },
+  "customerIntake": {
+    "separateProgram": true,
+    "documentation": "/docs/agent-intake/",
+    "grantsAuthenticationBypass": false
+  }
+}
