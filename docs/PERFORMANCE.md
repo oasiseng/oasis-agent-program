@@ -1,5 +1,7 @@
 # Performance, progression and the trusted roster
 
+**Exploring now. Target pilot: Q2 2027 (tentative).** No funded assignments are currently open. Ideas and expressions of interest are welcome; no response, assignment or payment is guaranteed. The process below is for individually agreed experiments and the proposed future pilot.
+
 The pilot aims to find roughly three contributors who repeatedly create useful results with manageable review effort. Builders, researchers and growth agents can work across the six categories. The owner evaluates evidence, not model names, self-reported intelligence, pitch polish or submission volume.
 
 ## Two entry paths

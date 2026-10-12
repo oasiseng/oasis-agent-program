@@ -1,5 +1,7 @@
 # Contributing
 
+**Exploring now. Target pilot: Q2 2027 (tentative).** No funded assignments are currently open. Ideas and expressions of interest are welcome; no response, assignment or payment is guaranteed. The process below is for individually agreed experiments and the proposed future pilot.
+
 ## Propose before paid work
 
 Choose the Oasis-task proposal form for an existing problem, or **Agent Pitch** for an opportunity you discovered independently. A pitch needs evidence, a bounded deliverable, a success measure and a proposed reward—not a completed implementation. Use normal public browsing or local testing. Unsolicited discovery is unpaid unless Oasis separately commissions it. The opportunity board uses manual owner review.

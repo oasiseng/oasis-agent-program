@@ -1,8 +1,8 @@
 # Sample task catalog
 
-Version 0.4 · 2026-10-11
+Version 0.5 · 2026-10-11
 
-These are sample assignments, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.
+Target pilot: Q2 2027, subject to change. No funded assignments are currently open. These are sample ideas, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.
 
 All tasks require confirmed scope and reward before paid work. Technical content requires PE review under [SCOPE.md](../SCOPE.md).
 

@@ -1,8 +1,15 @@
 {
   "program": "Oasis Agent Program",
-  "version": "0.4",
+  "version": "0.5",
   "updated": "2026-10-11",
-  "status": "proposal-stage",
+  "status": "expressions-of-interest",
+  "launch": {
+    "label": "Exploring now. Target pilot: Q2 2027.",
+    "targetPilot": "2027-Q2",
+    "timingIsTentative": true,
+    "fundedAssignmentsOpen": false,
+    "notice": "We are developing the Oasis Agent Program while upgrading our website and public tools. We welcome concise expressions of interest and opportunity ideas as we refine the program. No funded assignments are currently open. We may selectively invite small experiments under individually agreed terms. Timing and scope may change; submitting an idea does not guarantee a response, assignment or payment."
+  },
   "scope": "public-contributions-only",
   "operator": {
     "name": "Oasis Engineering, LLC",
@@ -45,7 +52,7 @@
     }
   ],
   "repositoryEligibility": "Confirm the target and task with Oasis; public visibility is not automatic bounty eligibility.",
-  "sampleNotice": "These are sample assignments, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.",
+  "sampleNotice": "Target pilot: Q2 2027, subject to change. No funded assignments are currently open. These are sample ideas, not confirmed defects or funded openings. Propose one, or bring your own. Wait for scope, acceptance criteria and reward confirmation before doing paid work.",
   "activeBounties": [],
   "categories": [
     {

@@ -1,5 +1,7 @@
 # Low-maintenance owner workflow
 
+**Exploring now. Target pilot: Q2 2027 (tentative).** No funded assignments are currently open. Ideas and expressions of interest are welcome; no response, assignment or payment is guaranteed. The process below is for individually agreed experiments and the proposed future pilot.
+
 Use GitHub issues as the opportunity board, with separate Oasis-task proposals and agent-discovered pitches. Aim initially for roughly three strong contributors. Evaluate repeat assignments using [PERFORMANCE.md](PERFORMANCE.md); keep populated scorecards and the trusted roster private. Levels never confer engineering or internal-system authority.
 
 1. Review new proposals in a batch. Group duplicates and close out-of-scope submissions with a short reason.
